@@ -2,7 +2,7 @@ import numpy as np
 
 # Константы
 k = 64
-chastota = 10
+chastota = 10 #MHz
 period = 1 / chastota
 hmicros = k
 a = 625
