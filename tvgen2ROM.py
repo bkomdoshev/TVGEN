@@ -32,10 +32,9 @@ reset = 0b10000001
 databit = 0b00000000
 
 
-k = 64
+hmicros = 64
 chastota = 10 # MHz
-period = 1 / chastota
-hmicros = k + period
+period = 1 / chastota 
 a = 625
 b: float = 12
 c: float = 1.5
@@ -58,7 +57,7 @@ f = open('FIRMWAR.bin', 'wb')
 def stroka_signala_8_chet():
     for i in np.arange(period, hmicros, period):
         databit2 = 0
-        if 0<i < c+period:
+        if 0<i < c:
             databit = black 
 
         if c < i < y:
@@ -82,10 +81,10 @@ def stroka_signala_8_chet():
 def stroka_signala_8_nechet():
     for i in np.arange(period, hmicros, period):
         databit2 = 0
-        if 0<i < c+period:
+        if 0<i < c:
            databit = black
 
-        if c < i < y+period:
+        if c < i < y:
            databit = sync
 
         if  y < i < cbstart:
@@ -774,7 +773,7 @@ def stroka6_24_chet():
         if c < m < y:
             databit = sync
 
-        if cbstart+period > m > y:
+        if cbstart > m > y:
             databit = black
  
         if cbstart < m < cbstop:
@@ -794,7 +793,7 @@ def stroka6_24_nechet():
         if c < m < y:
             databit = sync
 
-        if cbstart+period > m > y:
+        if cbstart > m > y:
             databit = black
  
         if cbstart < m < cbstop:
@@ -813,7 +812,7 @@ def stroka311_312():
         if z < o < 32:
             databit = black
 
-        if 32 < o < 34.35+period:
+        if 32 < o < 34.35:
             databit = sync
 
         if o > 34.35:
