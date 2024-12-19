@@ -61,16 +61,16 @@ def stroka_signala_8_chet():
         if 0<i < c+period:
             databit = black 
 
-        if c < i < y+period:
+        if c < i < y:
             databit = sync
 
-        if y < i < cbstart+period:
+        if y < i < cbstart:
             databit = black
 
-        if cbstart < i < cbstop+period:    
+        if cbstart < i < cbstop:    
             databit = cb
 
-        if cbstop < i < b+period:
+        if cbstop < i < b:
             databit = black
             
         if i > b:
@@ -88,13 +88,13 @@ def stroka_signala_8_nechet():
         if c < i < y+period:
            databit = sync
 
-        if  y < i < cbstart+period:
+        if  y < i < cbstart:
             databit = black
 
-        if  cbstart < i < cbstop+period:    
+        if  cbstart < i < cbstop:    
             databit = cb
 
-        if cbstop < i < b+period:
+        if cbstop < i < b:
             databit = black
 
         if i > b:
@@ -105,19 +105,19 @@ def stroka_signala_8_nechet():
 def stroka_signala_16_chet():
     for i in np.arange(period, hmicros, period):
         databit2 = 0
-        if 0<i < c+period:
+        if 0<i < c:
             databit = black 
 
-        if c < i < y+period:
+        if c < i < y:
             databit = sync
 
-        if y < i < cbstart+period:
+        if y < i < cbstart:
             databit = black
 
-        if cbstart < i < cbstop+period:    
+        if cbstart < i < cbstop:    
             databit = cb
 
-        if cbstop < i < b+period:
+        if cbstop < i < b:
             databit = black
             
         if i > b:
@@ -129,19 +129,19 @@ def stroka_signala_16_chet():
 def stroka_signala_16_nechet():
     for i in np.arange(period, hmicros, period):
         databit2 = 0
-        if 0<i < c+period:
+        if 0<i < c:
            databit = black
 
-        if c < i < y+period:
+        if c < i < y:
            databit = sync
 
-        if  y < i < cbstart+period:
+        if  y < i < cbstart:
             databit = black
 
-        if  cbstart < i < cbstop+period:    
+        if  cbstart < i < cbstop:    
             databit = cb
 
-        if cbstop < i < b+period:
+        if cbstop < i < b:
             databit = black
 
         if i > b:
@@ -152,19 +152,19 @@ def stroka_signala_16_nechet():
 def stroka_signala_red_chet():
     for i in np.arange(period, hmicros, period):
         databit2 = 0
-        if 0<i < c+period:
+        if 0<i < c:
             databit = black 
 
-        if c < i < y+period:
+        if c < i < y:
             databit = sync
 
-        if y < i < cbstart+period:
+        if y < i < cbstart:
             databit = black
 
-        if cbstart < i < cbstop+period:    
+        if cbstart < i < cbstop:    
             databit = cb
 
-        if cbstop < i < b+period:
+        if cbstop < i < b:
             databit = black
 #kanaly1-2
         if 14.4 > i > b:
@@ -247,19 +247,19 @@ def stroka_signala_red_chet():
 def stroka_signala_red_nechet():
     for i in np.arange(period, hmicros, period):
         databit2 = 0
-        if 0<i < c+period:
+        if 0<i < c:
            databit = black
 
-        if c < i < y+period:
+        if c < i < y:
            databit = sync
 
-        if  y < i < cbstart+period:
+        if  y < i < cbstart:
             databit = black
 
-        if  cbstart < i < cbstop+period:    
+        if  cbstart < i < cbstop:    
             databit = cb
             
-        if cbstop < i < b+period:
+        if cbstop < i < b:
             databit = black
 #kanaly1-2
         if 14.4 > i > b:
@@ -341,19 +341,19 @@ def stroka_signala_red_nechet():
 def stroka_signala_yellow_chet():
     for i in np.arange(period, hmicros, period):
         databit2 = 0
-        if 0<i < c+period:
+        if 0<i < c:
             databit = black 
 
-        if c < i < y+period:
+        if c < i < y:
             databit = sync
 
-        if y < i < cbstart+period:
+        if y < i < cbstart:
             databit = black
 
-        if cbstart < i < cbstop+period:    
+        if cbstart < i < cbstop:    
             databit = cb
 
-        if cbstop < i < b+period:
+        if cbstop < i < b:
             databit = black
 #kanaly1-2
         if 14.4 > i > b:
@@ -436,19 +436,19 @@ def stroka_signala_yellow_chet():
 def stroka_signala_yellow_nechet():
     for i in np.arange(period, hmicros, period):
         databit2 = 0
-        if 0<i < c+period:
+        if 0<i < c:
            databit = black
 
-        if c < i < y+period:
+        if c < i < y:
            databit = sync
 
-        if  y < i < cbstart+period:
+        if  y < i < cbstart:
             databit = black
 
-        if  cbstart < i < cbstop+period:    
+        if  cbstart < i < cbstop:    
             databit = cb
             
-        if cbstop < i < b+period:
+        if cbstop < i < b:
             databit = black
 #kanaly1-2
         if 14.4 > i > b:
@@ -531,19 +531,19 @@ def stroka_signala_yellow_nechet():
 def stroka_signala_green_chet():
     for i in np.arange(period, hmicros, period):
         databit2 = 0
-        if 0<i < c+period:
+        if 0<i < c:
             databit = black 
 
-        if c < i < y+period:
+        if c < i < y:
             databit = sync
 
-        if y < i < cbstart+period:
+        if y < i < cbstart:
             databit = black
 
-        if cbstart < i < cbstop+period:    
+        if cbstart < i < cbstop:    
             databit = cb
 
-        if cbstop < i < b+period:
+        if cbstop < i < b:
             databit = black
 #kanaly1-2
         if 14.4 > i > b:
@@ -626,19 +626,19 @@ def stroka_signala_green_chet():
 def stroka_signala_green_nechet():
     for i in np.arange(period, hmicros, period):
         databit2 = 0
-        if 0<i < c+period:
+        if 0<i < c:
            databit = black
 
-        if c < i < y+period:
+        if c < i < y:
            databit = sync
 
-        if  y < i < cbstart+period:
+        if  y < i < cbstart:
             databit = black
 
-        if  cbstart < i < cbstop+period:    
+        if  cbstart < i < cbstop:    
             databit = cb
             
-        if cbstop < i < b+period:
+        if cbstop < i < b:
             databit = black
 #kanaly1-2
         if 14.4 > i > b:
@@ -721,13 +721,13 @@ def stroka_signala_green_nechet():
 
 def stroki1_2():
     for t in np.arange(0, hmicros, period):
-        if t < 27.3+period:
+        if t < 27.3:
             databit = sync
 
-        if 27.3 < t < 32+period:
+        if 27.3 < t < 32:
             databit = black
 
-        if 32 < t < 59.3+period:
+        if 32 < t < 59.3:
             databit = sync
 
         if t > 59.3:
@@ -791,13 +791,13 @@ def stroka6_24_nechet():
         if m < c:
             databit = black
          
-        if c < m < y+period:
+        if c < m < y:
             databit = sync
 
         if cbstart+period > m > y:
             databit = black
  
-        if cbstart < m < cbstop+period:
+        if cbstart < m < cbstop:
             databit = cb
 
         if cbstop < m:
@@ -808,9 +808,9 @@ def stroka6_24_nechet():
         f.write(databit2.to_bytes(1, byteorder='big'))
 def stroka311_312():
     for o in np.arange(0, hmicros, period):
-        if o < z+period:
+        if o < z:
             databit = sync
-        if z < o < 32+period:
+        if z < o < 32:
             databit = black
 
         if 32 < o < 34.35+period:
@@ -822,13 +822,13 @@ def stroka311_312():
 
 def stroka313():
     for p in np.arange(0, hmicros, period):
-        if p < z+period:
+        if p < z:
             databit = sync
 
-        if z < p < 32+period:
+        if z < p < 32:
             databit = black
 
-        if 32 < p < 59.3+period:
+        if 32 < p < 59.3:
             databit = sync
 
         if p > 59.3:
@@ -838,13 +838,13 @@ def stroka313():
 
 def stroki314_315():
     for r in np.arange(0, hmicros, period):
-        if r < 27.3+period:
+        if r < 27.3:
             databit = sync
 
-        if 27.3 < r < 32+period:
+        if 27.3 < r < 32:
             databit = black
 
-        if 32 < r < 59.3+period:
+        if 32 < r < 59.3:
             databit = sync
 
         if r > 59.3:
@@ -854,13 +854,13 @@ def stroki314_315():
 
 def stroka316_317():
     for s in np.arange(0, hmicros, period):
-        if s < z+period:
+        if s < z:
             databit = sync
 
-        if z < s < 32+period:
+        if z < s < 32:
             databit = black
 
-        if 32 < s < 34.35+period:
+        if 32 < s < 34.35:
             databit = sync
 
         if s > 34.35:
@@ -870,7 +870,7 @@ def stroka316_317():
 
 def stroka318():
     for u in np.arange(0, hmicros, period):
-        if u < z+period:
+        if u < z:
             databit = sync
 
         if u > z:
@@ -881,16 +881,16 @@ def stroka318():
 def stroka319_336_nechet():
     for x in np.arange(0, hmicros, period):
         databit2 = 0
-        if x < c+period:
+        if x < c:
             databit = black
         
-        if c < x < y+period:
+        if c < x < y:
             databit = sync
 
-        if cbstart+period > x > y:
+        if cbstart > x > y:
             databit = black
  
-        if cbstart < x < cbstop+period:    
+        if cbstart < x < cbstop:    
             databit = cb
 
         if cbstop < x:
@@ -902,16 +902,16 @@ def stroka319_336_nechet():
 def stroka319_336_chet():
     for x in np.arange(0, hmicros, period):
         databit2 = 0
-        if x < c+period:
+        if x < c:
             databit = black
         
-        if c < x < y+period:
+        if c < x < y:
             databit = sync
 
-        if cbstart+period > x > y:
+        if cbstart > x > y:
             databit = black
  
-        if cbstart < x < cbstop+period:    
+        if cbstart < x < cbstop:    
             databit = cb
         if cbstop < x:
             databit = black
@@ -921,15 +921,15 @@ def stroka319_336_chet():
 
 def stroka623():
     for n in np.arange(0, hmicros, period):
-        if n < c+period:
+        if n < c:
             databit = black
-        if c < n < y+period:
+        if c < n < y:
             databit = sync
 
-        if y < n < 32+period:
+        if y < n < 32:
             databit = black
 
-        if 32 < n < 34.35+period:
+        if 32 < n < 34.35:
             databit = sync
 
         if n > 34.35:
@@ -939,13 +939,13 @@ def stroka623():
 
 def stroka624():
     for v in np.arange(0, hmicros, period):
-        if v < z+period:
+        if v < z:
             databit = sync
 
-        if z < v < 32+period:
+        if z < v < 32:
             databit = black
 
-        if 32 < v < 34.35+period:
+        if 32 < v < 34.35:
             databit = sync
 
         if v > 34.35:
@@ -953,13 +953,13 @@ def stroka624():
         f.write(databit.to_bytes(1, byteorder='big'))
 def stroka625():
     for q in np.arange(0, 59, period):
-        if q < z+period:
+        if q < z:
             databit = sync
 
-        if z < q < 32+period:
+        if z < q < 32:
             databit = black
 
-        if 32 < q < 34.35+period:
+        if 32 < q < 34.35:
             databit = sync
 
         if 58.8 > q > 34.35:
